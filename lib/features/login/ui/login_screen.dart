@@ -3,7 +3,7 @@ import 'package:doc_app/core/theming/style.dart';
 import 'package:doc_app/core/widgets/app_text_button.dart';
 import 'package:doc_app/features/login/data/models/login_request_body.dart';
 import 'package:doc_app/features/login/logic/cubit/login_cubit.dart';
-import 'package:doc_app/features/login/ui/widgets/already_have_account_text.dart';
+import 'package:doc_app/features/login/ui/widgets/dont_have_account_text.dart';
 import 'package:doc_app/features/login/ui/widgets/email_and_password.dart';
 import 'package:doc_app/features/login/ui/widgets/login_bloc_listener.dart';
 import 'package:doc_app/features/login/ui/widgets/terms_and_conditions_text.dart';
@@ -53,7 +53,7 @@ class LoginScreen extends StatelessWidget {
                     verticalSpace(16),
                     const TermsAndConditionsText(),
                     verticalSpace(60),
-                    const AlreadyHaveAccountText(),
+                    const DontHaveAccountText(),
                     const LoginBlocListener(),
                   ],
                 ),
